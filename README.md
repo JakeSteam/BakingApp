@@ -1,8 +1,5 @@
 Todo:
-
 - Add widget
-	- [ ] Tidy up / minimise code to just the essentials
-	- [ ] Create widget preview image and apply it
 	- [ ] Make sure everything works if back is pressed during config
 - [ ] Pressing back on step exits app...
 - [ ] Landscape support
