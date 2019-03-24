@@ -5,7 +5,6 @@ Todo:
 	- [ ] Video doesn't show up
 - [ ] Add tests
 - [ ] Tidying up
-	- [ ] Drawable folders
 	- [ ] Extract all resources
 		- [ ] Strings
 		- [ ] Colours
