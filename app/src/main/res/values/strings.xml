@@ -9,4 +9,5 @@
     <string name="widget_set">Set recipe</string>
     <string name="widget_set_explanation">Pick recipe for widget</string>
     <string name="widget_error">Please delete and readd the widget!</string>
+    <string name="ingredients">Ingredients</string>
 </resources>

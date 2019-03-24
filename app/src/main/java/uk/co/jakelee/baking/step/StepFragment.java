@@ -24,12 +24,6 @@ import uk.co.jakelee.baking.R;
 import uk.co.jakelee.baking.recipe.RecipeActivity;
 import uk.co.jakelee.baking.structure.Step;
 
-/**
- * A fragment representing a single Item detail screen.
- * This fragment is either contained in a {@link RecipeActivity}
- * in two-pane mode (on tablets) or a {@link StepActivity}
- * on handsets.
- */
 public class StepFragment extends Fragment {
 
     public static final String STEP_EXTRA = "uk.co.jakelee.baking.step";

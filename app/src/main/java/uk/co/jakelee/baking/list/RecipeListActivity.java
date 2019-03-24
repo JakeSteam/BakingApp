@@ -18,7 +18,7 @@ public class RecipeListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recipe_list);
 
         boolean isTwoPane = getWidthInDp() > TWO_PANE_MIN_WIDTH;
-        RecipeFetcher.populateRecipes(
+        RecipeFetcher.populateAppRecipes(
                 this,
                 (RecyclerView)findViewById(R.id.recipe_list),
                 (ContentLoadingProgressBar) findViewById(R.id.recipe_list_loading),

@@ -25,8 +25,8 @@ import uk.co.jakelee.baking.structure.Recipe;
 import uk.co.jakelee.baking.widget.WidgetConfigureActivity;
 
 public class RecipeFetcher {
-    public static void populateRecipes(final Activity activity, final RecyclerView recyclerView,
-                                       final ContentLoadingProgressBar spinner, final boolean isTwoPane) {
+    public static void populateAppRecipes(final Activity activity, final RecyclerView recyclerView,
+                                          final ContentLoadingProgressBar spinner, final boolean isTwoPane) {
         Request request = new Request.Builder()
                 .url(activity.getString(R.string.recipe_url))
                 .build();

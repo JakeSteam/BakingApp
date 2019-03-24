@@ -35,7 +35,7 @@ public class OkHttpHelper {
         public Response intercept(Chain chain) throws IOException {
             Response response = chain.proceed(chain.request());
             CacheControl cacheControl = new CacheControl.Builder()
-                    .maxAge(1, TimeUnit.HOURS)
+                    .maxAge(15, TimeUnit.MINUTES)
                     .build();
             return response.newBuilder()
                     .removeHeader("Pragma")
