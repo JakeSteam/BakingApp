@@ -54,8 +54,6 @@ public class EspressoTests {
         // Check ingredients + steps are visible
         onView(withId(R.id.recipe_ingredients)).check(matches(isDisplayed()));
         onView(withId(R.id.step_list)).check(matches(isDisplayed()));
-        RecyclerView stepList = mActivityRule.getActivity().findViewById(R.id.step_list);
-        assertNotEquals(stepList.getAdapter().getItemCount(), 0);
 
         // Check tapping step opens the step page
         onView(withId(R.id.step_list)).perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
