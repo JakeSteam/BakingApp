@@ -1,5 +1,4 @@
 Todo:
-- [ ] Fix build...
 - [ ] Landscape support
 	- [ ] Full screen video https://github.com/GeoffLedak/ExoplayerFullscreen
 	- [ ] More recipe cards in recipe list
