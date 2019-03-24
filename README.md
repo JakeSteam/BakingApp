@@ -1,4 +1,5 @@
 Todo:
+
 - Add widget
 	- [ ] Tidy up / minimise code to just the essentials
 	- [ ] Create widget preview image and apply it
