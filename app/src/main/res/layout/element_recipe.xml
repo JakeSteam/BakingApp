@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp">
+    <ImageView
+        android:id="@+id/recipe_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:alpha="0.3"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/recipe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Recipe name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            style="@style/AppTheme.TitleText"/>
+        <TextView
+            android:id="@+id/recipe_servings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Serves 8"
+            android:layout_below="@id/recipe_name"
+            style="@style/AppTheme.BodyText"/>
+        <TextView
+            android:id="@+id/recipe_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10 steps"
+            android:layout_below="@id/recipe_servings"
+            style="@style/AppTheme.BodyText"/>
+        <TextView
+            android:id="@+id/recipe_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="4 ingredients"
+            android:layout_below="@id/recipe_steps"
+            style="@style/AppTheme.BodyText"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
