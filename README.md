@@ -4,12 +4,13 @@ Todo:
 	- [ ] More recipe cards in recipe list
 	- [ ] Video doesn't show up
 - [ ] Add tests
+	- Provide sample json
+	- Check recipe is visible
+	- Check tapping it opens the recipe page
+	- Check ingredients + steps are visible
+	- Check tapping step opens the step page
+	- Check all elements are visible
 - [ ] Tidying up
-	- [ ] Extract all resources
-		- [ ] Strings
-		- [ ] Colours
-		- [ ] Dimensions
-		- [ ] Styles
 	- [ ] Check every file's code
 	- [ ] Check rotation / back on every screen, using onStateChange
 	- [ ] Handle bad JSON

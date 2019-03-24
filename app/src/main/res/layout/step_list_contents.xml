@@ -23,7 +23,7 @@
                 style="@style/AppTheme.TitleText"
                 android:text="@string/ingredients"/>
             <TextView
-                android:id="@+id/recipe_steps"
+                android:id="@+id/recipe_ingredients"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/AppTheme.BodyText" />
@@ -35,8 +35,7 @@
         app:cardCornerRadius="@dimen/standard_padding"
         android:layout_margin="@dimen/standard_padding">
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/item_list"
-            android:name="uk.co.jakelee.baking.ItemListFragment"
+            android:id="@+id/step_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"

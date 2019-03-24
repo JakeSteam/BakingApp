@@ -31,10 +31,10 @@ public class RecipeActivity extends AppCompatActivity {
         for (Ingredient ingredient : recipe.getIngredients()) {
             sb.append(ingredient.toString());
         }
-        ((TextView)findViewById(R.id.recipe_steps)).setText(sb.toString());
+        ((TextView)findViewById(R.id.recipe_ingredients)).setText(sb.toString());
 
         // Set steps
-        RecyclerView recyclerView = findViewById(R.id.item_list);
+        RecyclerView recyclerView = findViewById(R.id.step_list);
         boolean isTwoPane = findViewById(R.id.item_detail_container) != null;
         recyclerView.setAdapter(new StepListAdapter(this, recipe, isTwoPane));
     }
