@@ -23,11 +23,6 @@ import static org.hamcrest.Matchers.not;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-/**
- * Instrumented test, which will execute on an Android device.
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
- */
 @RunWith(AndroidJUnit4.class)
 public class EspressoTests {
 
@@ -38,7 +33,7 @@ public class EspressoTests {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
-        assertEquals("uk.co.jakelee.baking", appContext.getPackageName());
+        assertEquals(BuildConfig.APPLICATION_ID, appContext.getPackageName());
     }
 
     @Test
@@ -57,8 +52,6 @@ public class EspressoTests {
 
         // Check tapping step opens the step page
         onView(withId(R.id.step_list)).perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
-
-        // Check all elements are visible
         onView(withId(R.id.item_detail)).check(matches(not(withText(""))));
     }
 }
