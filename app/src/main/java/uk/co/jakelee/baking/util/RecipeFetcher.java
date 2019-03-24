@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonParseException;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
@@ -43,7 +44,13 @@ public class RecipeFetcher {
                     return;
                 }
                 Type recipeListType = new TypeToken<List<Recipe>>() {}.getType();
-                final List<Recipe> recipes = new Gson().fromJson(response.body().string(), recipeListType);
+                final List<Recipe> recipes;
+                try {
+                    recipes = new Gson().fromJson(response.body().string(), recipeListType);
+                } catch (JsonParseException e) {
+                    displayError(activity, e.getMessage());
+                    return;
+                }
                 final GridLayoutManager glm = new GridLayoutManager(
                         recyclerView.getContext(),
                         isTwoPane ? 4 : 2,
@@ -78,7 +85,13 @@ public class RecipeFetcher {
                     return;
                 }
                 Type recipeListType = new TypeToken<List<Recipe>>() {}.getType();
-                final List<Recipe> recipes = new Gson().fromJson(response.body().string(), recipeListType);
+                final List<Recipe> recipes;
+                try {
+                    recipes = new Gson().fromJson(response.body().string(), recipeListType);
+                } catch (JsonParseException e) {
+                    displayError(activity, e.getMessage());
+                    return;
+                }
                 activity.populatePicker(recipes);
             }
         });

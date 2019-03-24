@@ -3,14 +3,8 @@ Todo:
 	- [ ] Full screen video https://github.com/GeoffLedak/ExoplayerFullscreen
 	- [ ] More recipe cards in recipe list
 	- [ ] Video doesn't show up
-- [ ] Add tests
-	- Provide sample json
-	- Check recipe is visible
-	- Check tapping it opens the recipe page
-	- Check ingredients + steps are visible
-	- Check tapping step opens the step page
-	- Check all elements are visible
+	- [ ] Check espresso test works
 - [ ] Tidying up
+	- [ ] Improve on tests
 	- [ ] Check every file's code
 	- [ ] Check rotation / back on every screen, using onStateChange
-	- [ ] Handle bad JSON
