@@ -21,7 +21,6 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 import androidx.fragment.app.Fragment;
 import uk.co.jakelee.baking.BuildConfig;
 import uk.co.jakelee.baking.R;
-import uk.co.jakelee.baking.recipe.RecipeActivity;
 import uk.co.jakelee.baking.structure.Step;
 
 public class StepFragment extends Fragment {
@@ -36,6 +35,7 @@ public class StepFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        assert getArguments() != null;
         if (getArguments().containsKey(STEP_EXTRA)) {
             step = getArguments().getParcelable(STEP_EXTRA);
 

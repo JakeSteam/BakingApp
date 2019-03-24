@@ -12,7 +12,7 @@ import uk.co.jakelee.baking.structure.Recipe;
 
 public class RecipeActivity extends AppCompatActivity {
 
-    public static String RECIPE_EXTRA = "uk.co.jakelee.baking.recipe";
+    public final static String RECIPE_EXTRA = "uk.co.jakelee.baking.recipe";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

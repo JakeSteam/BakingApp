@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:alpha="0.3"/>
+        android:alpha="0.3"
+        android:contentDescription="@string/recipe_image_desc" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

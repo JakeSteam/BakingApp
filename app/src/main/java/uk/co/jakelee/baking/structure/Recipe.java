@@ -90,9 +90,9 @@ public class Recipe implements Parcelable {
     protected Recipe(Parcel in) {
         this.id = in.readInt();
         this.name = in.readString();
-        this.ingredients = new ArrayList<Ingredient>();
+        this.ingredients = new ArrayList<>();
         in.readList(this.ingredients, Ingredient.class.getClassLoader());
-        this.steps = new ArrayList<Step>();
+        this.steps = new ArrayList<>();
         in.readList(this.steps, Step.class.getClassLoader());
         this.servings = in.readInt();
         this.image = in.readString();

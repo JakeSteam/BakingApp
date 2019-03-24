@@ -12,10 +12,10 @@ import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Response;
 
-public class OkHttpHelper {
+class OkHttpHelper {
     private static final int TIMEOUT_SECONDS = 20;
 
-    public OkHttpClient httpClient(Context context) {
+    OkHttpClient httpClient(Context context) {
         CacheInterceptor cacheInterceptor = new CacheInterceptor();
         File httpCacheDirectory = new File(context.getCacheDir(), "http-cache");
         int cacheSize = 10 * 1024 * 1024;

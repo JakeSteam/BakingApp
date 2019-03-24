@@ -1,17 +1,14 @@
 package uk.co.jakelee.baking.widget;
 
-import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.widget.RemoteViews;
 
 import uk.co.jakelee.baking.BuildConfig;
 import uk.co.jakelee.baking.R;
 
-import uk.co.jakelee.baking.recipe.RecipeActivity;
 
 public class WidgetProvider extends AppWidgetProvider {
 

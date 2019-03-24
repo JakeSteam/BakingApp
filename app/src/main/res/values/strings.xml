@@ -3,11 +3,12 @@
 
     <string name="title_item_detail">Item Detail</string>
     <string name="recipe_servings">Serves %d</string>
-    <string name="recipe_steps">%d steps</string>
-    <string name="recipe_ingredients">%d ingredients</string>
+    <string name="recipe_steps">%d step(s)</string>
+    <string name="recipe_ingredients">%d ingredient(s)</string>
     <string name="recipe_url">https://go.udacity.com/android-baking-app-json</string>
     <string name="widget_set">Set recipe</string>
     <string name="widget_set_explanation">Pick recipe for widget</string>
     <string name="widget_error">Please delete and readd the widget!</string>
     <string name="ingredients">Ingredients</string>
+    <string name="recipe_image_desc">Image of food</string>
 </resources>

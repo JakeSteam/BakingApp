@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:alpha="0.3"/>
+        android:alpha="0.3"
+        android:contentDescription="@string/recipe_image_desc" />
 
     <TextView
         android:id="@+id/step_number"
@@ -25,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/AppTheme.TitleText"
-        android:layout_toRightOf="@id/step_number"
+        android:layout_toEndOf="@id/step_number"
         android:textAppearance="?attr/textAppearanceListItem" />
 
     <TextView
@@ -33,15 +34,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/AppTheme.BodyText"
-        android:layout_toRightOf="@id/step_number"
+        android:layout_toEndOf="@id/step_number"
         android:layout_below="@id/step_title"
         android:maxLines="3"
         android:ellipsize="end"
         android:textAppearance="?attr/textAppearanceListItem" />
 
-    <ImageView
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_alignParentBottom="true"
-        android:src="#BBBBBB"/>
+        android:background="#BBBBBB"/>
 </RelativeLayout>

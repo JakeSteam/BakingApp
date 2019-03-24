@@ -10,7 +10,7 @@ import uk.co.jakelee.baking.R;
 import uk.co.jakelee.baking.util.RecipeFetcher;
 
 public class RecipeListActivity extends AppCompatActivity {
-    private float TWO_PANE_MIN_WIDTH = 800f;
+    private final float TWO_PANE_MIN_WIDTH = 800f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

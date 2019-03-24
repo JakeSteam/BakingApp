@@ -39,7 +39,7 @@
             android:name="uk.co.jakelee.baking.ItemListFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layoutManager="LinearLayoutManager"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:context=".recipe.RecipeActivity"
             tools:listitem="@layout/element_step"/>
     </androidx.cardview.widget.CardView>

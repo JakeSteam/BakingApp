@@ -1,11 +1,9 @@
 package uk.co.jakelee.baking.widget;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.appwidget.AppWidgetManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -23,8 +21,8 @@ import uk.co.jakelee.baking.util.RecipeFetcher;
 public class WidgetConfigureActivity extends Activity {
     private List<String> names;
     private List<List<Ingredient>> ingredients;
-    int widgetId = AppWidgetManager.INVALID_APPWIDGET_ID;
-    Spinner spinner;
+    private int widgetId = AppWidgetManager.INVALID_APPWIDGET_ID;
+    private Spinner spinner;
 
     public WidgetConfigureActivity() {
         super();
@@ -67,7 +65,7 @@ public class WidgetConfigureActivity extends Activity {
         });
     }
 
-    View.OnClickListener mOnClickListener = new View.OnClickListener() {
+    private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
         public void onClick(View v) {
             final Context context = WidgetConfigureActivity.this;
             String recipeName = names.get(spinner.getSelectedItemPosition());
