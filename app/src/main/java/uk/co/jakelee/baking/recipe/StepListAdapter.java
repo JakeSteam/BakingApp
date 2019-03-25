@@ -53,6 +53,7 @@ public class StepListAdapter
                     .load(imagePath)
                     .into(holder.stepImage);
         }
+        // Only display step number next to non-intro rows
         if (!isFirstStepIntro) {
             holder.stepNumber.setText(String.valueOf(position + 1));
             holder.stepDesc.setText(step.getDescription());
