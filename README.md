@@ -1,5 +1,4 @@
 Todo:
-- [ ] Reproduce crash re: rotating + pressing back
-- [ ] Tidying up
-	- [ ] Improve on tests
-	- [ ] Check every file's code
+- [ ] When video rotated, restore state + progress
+- [ ] Make sure test cases work reliably...
+- [ ] Make widget a listview
