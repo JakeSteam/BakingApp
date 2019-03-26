@@ -41,7 +41,7 @@ public class WidgetViewsFactory implements RemoteViewsService.RemoteViewsFactory
         CharSequence name = prefs.getString(WidgetProvider.PREF_RECIPE_NAME + widgetId, "name");
         CharSequence ingredients = prefs.getString(WidgetProvider.PREF_RECIPE_INGREDIENTS + widgetId, "ingredients");
 
-        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget);
+        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_inside);
         views.setTextViewText(R.id.recipe_name, name);
         views.setTextViewText(R.id.recipe_ingredients, ingredients);
 
