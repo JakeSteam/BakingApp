@@ -23,14 +23,14 @@ public class WidgetProvider extends AppWidgetProvider {
 
         Intent intent = new Intent(context, WidgetService.class);
         intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId); // AppWidgetManager.EXTRA_APPWIDGET_ID
-        views.setRemoteAdapter(R.id.listview, intent);
+        views.setRemoteAdapter(appWidgetId, R.id.listview, intent);
 
-        SharedPreferences prefs = context.getSharedPreferences(BuildConfig.APPLICATION_ID, Context.MODE_PRIVATE);
+        /*SharedPreferences prefs = context.getSharedPreferences(BuildConfig.APPLICATION_ID, Context.MODE_PRIVATE);
         CharSequence name = prefs.getString(WidgetProvider.PREF_RECIPE_NAME + appWidgetId, "name");
         CharSequence ingredients = prefs.getString(WidgetProvider.PREF_RECIPE_INGREDIENTS + appWidgetId, "ingredients");
 
         views.setTextViewText(R.id.recipe_name, name);
-        views.setTextViewText(R.id.recipe_ingredients, ingredients);
+        views.setTextViewText(R.id.recipe_ingredients, ingredients);*/
 
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
